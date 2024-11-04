@@ -28,17 +28,10 @@ max_framebuffers=2
 
 # Don't have the firmware create an initial video= setting in cmdline.txt.
 # Use the kernel's default instead.
-disable_fw_kms_setup=1
-
-# Run in 64-bit mode
-arm_64bit=1
+#disable_fw_kms_setup=1
 
 # Disable compensation for displays with overscan
-#disable_overscan=1
-overscan_left=40
-overscan_right=40
-overscan_top=40
-overcan_bottom=40
+disable_overscan=1
 
 # Run as fast as firmware / board allows
 arm_boost=1
@@ -53,10 +46,3 @@ otg_mode=1
 dtoverlay=dwc2,dr_mode=host
 
 [all]
-
-hdmi_ignore_hotplug=1
-hdmi_force_hotplug=0
-hdmi_ignore_edid=0xa5000080
-enable_tvout=1
-sdtv_mode=0        # NTSC mode (or use 2 for PAL)
-sdtv_aspect=1       # 4:3 aspect ratio

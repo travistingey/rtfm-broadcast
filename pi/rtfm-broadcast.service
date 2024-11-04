@@ -1,0 +1,13 @@
+[Unit]
+Description=RTFM Broadcast Node Service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/node /home/rtfm/rtfm-broadcast/server.js
+Restart=always
+User=rtfm
+Environment=Display=:0
+
+
+[Install]
+WantedBy=multi-user.target

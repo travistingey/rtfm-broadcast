@@ -11,3 +11,8 @@ sudo apt install -y nodejs
 sudo apt install -y git
 ### Chromium Browser
 sudo apt install -y chromium-browser
+
+
+
+## Running Chromium in Kiosk Mode
+DISPLAY=:0 chromium-browser --kiosk http://localhost:3000 --autoplay-policy=no-user-gesture-required --no-sandbox

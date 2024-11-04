@@ -1,1 +1,34 @@
-<!DOCTYPE html><html><body><h1>Notification System</h1></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTFM Broadcast</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div id="player-container">
+        <video id="media-player" autoplay playsinline muted loop disableRemotePlayback>
+            <source src="/media/CC501_hypercard.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div id="overlay-notification" class="notification hidden">
+        <p id="overlay-message">Overlay Notification</p>
+    </div>
+
+    <div id="fullscreen-notification" class="notification fullscreen hidden">
+        <p id="fullscreen-message">Fullscreen Notification</p>
+    </div>
+
+    <!-- Anime.js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    
+    <!-- Socket.IO Client -->
+    <script src="/socket.io/socket.io.js"></script>
+    
+    <!-- Main JavaScript -->
+    <script src="/main.js"></script>
+</body>
+</html>

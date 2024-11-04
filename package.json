@@ -1,15 +1,23 @@
 {
   "name": "broadcast-server",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "copy:service": "cp /etc/systemd/system/rtfm-broadcast.service ~/rtfm-broadcast/pi/rtfm-broadcast.service",
+    "apply:service": "sudo cp ~/rtfm-broadcast/pi/rtfm-broadcast.service /etc/systemd/system/rtfm-broadcast.service"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "express": "^4.21.1"
+    "connect-livereload": "^0.6.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "livereload": "^0.9.3",
+    "nodemon": "^3.1.7",
+    "socket.io": "^4.8.1"
   }
 }
