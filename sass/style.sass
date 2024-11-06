@@ -1,0 +1,94 @@
+@import _typography
+
+html, body
+  margin: 0
+  padding: 0
+ 
+body
+  font-family: 'DePixelBreit', sans-serif
+  background: blue
+  position: relative
+  margin: 0 auto
+  width: 672px
+  height: 504px
+  font-size: 48px
+
+h1
+  font-family: 'DePixelBreit', serif
+
+strong 
+  font-family: 'DePixelHalbfett', serif
+
+.legible-text
+  font-family: 'DePixelIlllegible', sans-serif
+
+.small-text
+  font-family: 'DePixelKlein', sans-serif
+
+.narrow-text
+  font-family: 'DePixelSchmal', sans-serif
+
+p
+  margin: 0
+
+#video-container, .notification
+  display: block
+  width: 672px
+  height: 504px
+
+video
+  width: 100%
+  height: 100%
+  object-fit: cover
+
+.hidden
+  display: none
+
+.notification
+  padding: 0 32px
+  position: absolute
+  bottom: 0
+  left: 0
+  box-sizing: border-box
+  background-size: cover
+  box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.5)
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  color: white
+  text-shadow: 3px 3px 0 black
+  z-index: 2
+
+  p
+    font-size: 48px
+    text-align: center
+
+// Transition Overlay
+.transition-overlay
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background-color: black
+  opacity: 0
+  z-index: 1000
+
+  &.visible
+    opacity: 1
+
+  &.hidden
+    display: none
+
+// Hidden Preloader Video
+.hidden
+  display: none
+
+#preloader-video
+  visibility: hidden
+  position: absolute
+  top: 0
+  left: 0
+  width: 0
+  height: 0

@@ -7,4 +7,4 @@ xset s off
 xset s noblank
 
 # Launch Chromium in kiosk mode
-chromium-browser --kiosk http://localhost:3000 --autoplay-policy=no-user-gesture-required --no-sandbox
+chromium-browser --kiosk --incognito http://localhost:3000 --autoplay-policy=no-user-gesture-required --disable-cache
